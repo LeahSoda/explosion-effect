@@ -25,7 +25,7 @@ class Atom {
     }
 
     updateSize(){
-      this.radius+=0.00005;
+      this.radius+=0.005;
     }
     //draw
     draw() {
@@ -39,7 +39,7 @@ class Atom {
 //start autopaint whrn mouse is clicked
 canvas.addEventListener('click', function (e) {
     //the line grows in 20 start point
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 5000; i++) {
             atoms.push(new Atom(e.x, e.y));
     }
     console.log(e.x, e.y);
